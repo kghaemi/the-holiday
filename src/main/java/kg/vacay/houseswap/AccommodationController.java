@@ -7,10 +7,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class AccommodationController {
-    private static final String template = "Hello, %s!";
-    @GetMapping("/accommodation")
-    public Accommodation accommodation(@RequestParam(value = "name", defaultValue = "world") String name) {
-        return new Accommodation(counter.incrementAndGet(), String.format(template, name));
+    @GetMapping("/User/katieghaemi/Documents") //this means the server will start on the localhost
+    public String helloWorld() {
+        String hw = "<h1> hello world!!!!!! <h1/>";
+        return hw;
     }
 
 }
